@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
-import Me2 from '../../assets/About.jpg'
+import Me2 from '../../assets/About.jpg';
+import AboutBox from './AboutBox';
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       </h2>
 
       <div className="about_container grid">
-        <img src={Me2} style={{width:'200px'}} className='about_img' alt="" />
+        <img src={Me2} style={{width:'200px', borderRadius:'50%'}} className='about_img' alt="" />
 
         <div className="about_data grid">
 
@@ -20,7 +21,7 @@ const About = () => {
               deserunt, sapiente eius nobis possimus, corrupti rem sint quo ratione consequatur 
               dolore consectetur dicta id iusto eligendi obcaecati.
             </p>
-            <a href="" className="btn">Telecharger Mon Curriculum</a>
+             <a href="" className="btn">Telecharger Mon Curriculum</a>
           </div>
 
           <div className="about_skills grid">
@@ -34,7 +35,7 @@ const About = () => {
               </div>
 
               <div className="skills_bar">
-                <span className="skills_percentage"></span>
+                <span className="skills_percentage geci"></span>
               </div>
             </div>
 
@@ -44,11 +45,11 @@ const About = () => {
 
               <div className="skills_titles">
                 <h3 className="skills_name">Developpement Web</h3>
-                <span className="skills_number development">80%</span>
+                <span className="skills_number">80%</span>
               </div>
 
               <div className="skills_bar">
-                <span className="skills_percentage ui_design"></span>
+                <span className="skills_percentage development"></span>
               </div>
             </div>
 
@@ -57,6 +58,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <AboutBox/>
     </section>
   )
 }
