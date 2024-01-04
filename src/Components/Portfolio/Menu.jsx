@@ -8,7 +8,7 @@ const Menu = [
         id : 1,
         image : Work1,
         title : 'Project Manager',
-        category : "Design"
+        category : "BTP"
     },
     {
         id : 2,
@@ -32,13 +32,13 @@ const Menu = [
         id : 5,
         image : Work5,
         title : 'Project Manager',
-        category : "Design"
+        category : "Creative"
     },
     {
         id : 6,
         image : Work1,
         title : 'Project Manager',
-        category : "Design"
+        category : "Creative"
     },
 ]
 
