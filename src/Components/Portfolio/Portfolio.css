@@ -1,6 +1,7 @@
 .work_filters {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 1.875rem;
     margin-bottom: 2.5rem;
 }
@@ -95,3 +96,23 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+@media screen and (max-width : 1024px) {
+    .work_filters {
+        justify-content: center;
+    }
+    .work_container{
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+  }
+
+  @media screen and (max-width : 768px) {
+    .work_container {
+        grid-template-columns: 310px;
+    }
+    .work_filters {
+        row-gap: .25rem;
+    }
+  }

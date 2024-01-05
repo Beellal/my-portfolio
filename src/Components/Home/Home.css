@@ -162,3 +162,10 @@
     bottom: 10%;
     color: #a60d4f;
 }
+
+
+@media screen and (max-width : 1024px) {
+    .home_social-link {
+        font-size: 1.125rem;
+    }
+  }

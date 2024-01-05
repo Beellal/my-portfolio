@@ -4,6 +4,7 @@ import Logo from '../../assets/Logo-ryp.png'
 
 const Sidebar = () => {
   return (
+    <>
     <aside className='aside'>
         <a href="#home" className="nav__logo">
             <img style={{width:'100px'}} src={Logo} alt="" />
@@ -64,6 +65,11 @@ const Sidebar = () => {
             </span>
         </div>
     </aside>
+
+    <div className="nav_toggle">
+        <i className="icon-menu"></i>
+    </div>
+    </>
   )
 }
 
