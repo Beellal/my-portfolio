@@ -3,8 +3,11 @@ import './Testimonials.css';
 import Image1 from '../../assets/S2.jpg';
 import Image2 from '../../assets/S3.jpg';
 import Image3 from '../../assets/About.jpg';
-import { Pagination } from 'swiper';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 
@@ -42,7 +45,7 @@ const Testimonials = () => {
       spaceBetween={30}
       slidesPerView={1}
       loop={true}
-      navigation
+      grabCursor={true}
       pagination= {{clickable : true}}
       >
          {data.map(({id, image, title, subtitle, comment}) => {
