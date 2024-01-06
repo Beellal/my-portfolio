@@ -67,3 +67,9 @@
         grid-template-columns: 310px;
     }
   }
+
+  @media screen and (max-width : 350px) {
+    .services_container {
+        grid-template-columns: 1fr;
+    }
+  }
