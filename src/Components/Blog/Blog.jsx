@@ -1,6 +1,6 @@
 import React from 'react';
 import './Blog.css';
-import Image from '../../assets/Me.jpg'
+import Image from '../../assets/Me1.png'
 
 const Blog = () => {
   return (

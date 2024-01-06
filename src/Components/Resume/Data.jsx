@@ -3,9 +3,9 @@ const Data = [
         id : 1,
         category : 'education',
         icon : 'icon-graduation',
-        year : '2022 - present',
-        title : 'Development Web',
-        desc : 'Lorem ipsum dolor sit amet, consectetur adipisicing '
+        year : '2022 - 2024',
+        title : 'Developpement Web',
+        desc : ''
     },
     {
         id : 2,

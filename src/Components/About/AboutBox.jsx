@@ -11,8 +11,8 @@ const AboutBox = () => {
                 </i>
 
                 <div>
-                    <h3 className="about_title">02</h3>
-                    <span className="about_subtitle">Projet Accompli</span>
+                    <h3 className="about_title">05</h3>
+                    <span className="about_subtitle">Projets Accomplis</span>
                 </div>
             </div>
 
@@ -24,8 +24,8 @@ const AboutBox = () => {
                 </i>
 
                 <div>
-                    <h3 className="about_title">00</h3>
-                    <span className="about_subtitle">Cup of coffee</span>
+                    <h3 className="about_title">--</h3>
+                    <span className="about_subtitle">Chargement</span>
                 </div>
             </div>
 
@@ -39,8 +39,8 @@ const AboutBox = () => {
                 </i>
 
                 <div>
-                    <h3 className="about_title">00</h3>
-                    <span className="about_subtitle">Challenge</span>
+                    <h3 className="about_title">--</h3>
+                    <span className="about_subtitle">Chargement</span>
                 </div>
             </div>
         </div>

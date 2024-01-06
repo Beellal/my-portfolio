@@ -1,8 +1,8 @@
-import Work1 from '../../assets/S2.jpg';
-import Work2 from '../../assets/S2.jpg';
-import Work3 from '../../assets/S2.jpg';
-import Work4 from '../../assets/S2.jpg';
-import Work5 from '../../assets/S2.jpg';
+import Work1 from '../../assets/S1.png';
+import Work2 from '../../assets/S2.png';
+import Work3 from '../../assets/S3.png';
+import Work4 from '../../assets/S1.png';
+import Work5 from '../../assets/S3.png';
 const Menu = [
     {
         id : 1,

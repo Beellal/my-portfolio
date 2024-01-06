@@ -1,27 +1,27 @@
 import React from 'react';
 import './Services.css';
-import Image1 from '../../assets/S1.jpg';
-import Image2 from '../../assets/S2.jpg';
-import Image3 from '../../assets/S3.jpg';
+import Image1 from '../../assets/S1.png';
+import Image2 from '../../assets/S2.png';
+import Image3 from '../../assets/S3.png';
 
 const data = [
   {
     id : 1,
     image :Image1,
     title: "Technicien BTP",
-    description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur quidem voluptatum commodi ullam adipisci beatae magni quia velit quasi dignissimos maxime quaerat eum doloribus nihil accusantium odio, aperiam itaqu",
+    description : "Pour tous les travail de construction et de gestion de projet de construction",
   },
   {
     id : 2,
-    image :Image2,
-    title: "Management",
-    description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur quidem voluptatum commodi ullam adipisci beatae magni quia velit quasi dignissimos maxime quaerat eum doloribus nihil accusantium odio, aperiam itaqu",
+    image :Image3,
+    title: " Program & Community (Manager)",
+    description : "Pour des start-ups et des entreprises opérant dans le domaine du BTP. ",
   },
   {
     id : 3,
-    image :Image3,
+    image :Image2,
     title: "Development web",
-    description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur quidem voluptatum commodi ullam adipisci beatae magni quia velit quasi dignissimos maxime quaerat eum doloribus nihil accusantium odio, aperiam itaqu",
+    description : "Je travaille principalement du côté Frontend, avec des compétences également dans le Backend.",
   }
 ]
 

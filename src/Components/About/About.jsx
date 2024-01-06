@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about container section" id='about'>
       <h2 className="section_title">
-        A propos
+      À propos de moi
       </h2>
 
       <div className="about_container grid">
@@ -17,9 +17,15 @@ const About = () => {
 
           <div className="about_info">
             <p className="about_description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse temporibus iure nostrum, 
-              deserunt, sapiente eius nobis possimus, corrupti rem sint quo ratione consequatur 
-              dolore consectetur dicta id iusto eligendi obcaecati.
+            Je suis issu d'une formation en génie civil, option BTP, avec l'obtention d'une licence. 
+            Ma passion pour le monde technologique informatique m'a conduit à suivre une formation en codage (développement web) 
+            dans une école spécialisée. Aujourd'hui, je peux me positionner en tant que développeur web et technicien en génie civil. 
+            Mon objectif est d'appliquer les compétences en codage acquises dans le domaine du BTP, en recherchant des solutions numériques et technologiques. 
+            Je travaille également sur des projets de développement communautaire.
+            <br />
+            <br />
+            Je continue constamment à apprendre pour mon épanouissement personnel et professionnel, 
+            en développant continuellement mon esprit créatif, mon leadership personnel, ainsi que mon expertise dans ce que j'entreprends.
             </p>
              <a href="" className="btn">Telecharger Mon Curriculum</a>
           </div>
