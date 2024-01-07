@@ -1,8 +1,12 @@
 import React , {useState} from 'react';
 import './Portfolio.css';
 import Menu from './Menu';
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
 const Portfolio = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const [items, setItems] = useState(Menu);
 
 
@@ -17,7 +21,7 @@ const Portfolio = () => {
 
   return (
     <section className="work container section" id='portfolio'>
-      <h2 className="section_title">Recent Work</h2>
+      <h2 className="section_title" style={{ color: darkMode ? "White" : "" }}>Recent Work</h2>
 
       <div className="work_filters">
         <span className="work_item" onClick={() => setItems(Menu)}>Everything</span>

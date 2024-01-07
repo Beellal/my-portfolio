@@ -42,6 +42,12 @@
     padding: 0.4375;
 }
 
+.span_ex_fr {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--first-color);
+}
+
 .timeline_date {
     color: #8b88b1;
     font-size: var(--small-font-size);
