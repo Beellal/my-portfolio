@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import Logo from '../../assets/Logo-ryp.png'
+import Logo from '../../assets/Logo-ryp.png';
+import Toggl from '../Toggle/Toggl';
+
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false)
@@ -10,6 +12,7 @@ const Sidebar = () => {
         <a href="#home" className="nav__logo">
             <img style={{width:'100px'}} src={Logo} alt="" />
         </a>
+        <Toggl />
 
         <nav className="nav">
             <div className="nav_menu">
@@ -62,7 +65,7 @@ const Sidebar = () => {
 
         <div className="nav_footer">
             <span className="copyright">
-                           &copy;      2024
+                &copy;2024
             </span>
         </div>
     </aside>

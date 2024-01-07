@@ -11,8 +11,8 @@ const Data = [
         id : 2,
         category : 'education',
         icon : 'icon-graduation',
-        year : '2022 - present',
-        title : 'Development Web',
+        year : '2020 - 2023',
+        title : 'Licence Génie-Civil',
         desc : 'Lorem ipsum dolor sit amet, consectetur adipisicing '
     },
     {
