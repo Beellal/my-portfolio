@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import Logo from '../../assets/Logo-ryp.png';
+import Logo from '../../assets/logo-ryp.png';
 import Toggl from '../Toggle/Toggl';
 
 
@@ -10,7 +10,7 @@ const Sidebar = () => {
     <>
     <aside className={toggle ? "aside show_menu" : "aside"}>
         <a href="#home" className="nav__logo">
-            <img style={{width:'100px'}} src={Logo} alt="" />
+            <img style={{width:'500px'}} src={Logo} alt="" />
         </a>
         <Toggl />
 

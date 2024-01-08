@@ -62,3 +62,7 @@
     height: 0.375rem !important;
     border-radius: 0.25rem;
 }
+
+.prs_img{
+    border-radius: 50%;
+}

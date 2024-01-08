@@ -1,15 +1,19 @@
 import React from 'react';
 import './Contact.css';
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
 const Contact = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <section className="contact container section" id="contact">
-      <h2 className="section_title">Get In Touch</h2>
+      <h2 className="section_title" style={{ color: darkMode ? "White" : "" }}>Get In Touch</h2>
 
       <div className="contact_container grid">
         <div className="contact_info">
-          <h3 className="contact_title">Let's talk about everything !</h3>
-          <p className="contact_details">Don't like form ? Send me an email</p>
+          <h3 className="contact_title" style={{ color: darkMode ? "rgb(255, 76, 97)" : "" }}>Parlons de tout !</h3>
+          <p className="contact_details">Préférez-vous une approche différente ? Envoyez-moi un e-mail.</p>
         </div>
 
         <form action="" className="contact_form">

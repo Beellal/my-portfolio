@@ -21,20 +21,20 @@ const Portfolio = () => {
 
   return (
     <section className="work container section" id='portfolio'>
-      <h2 className="section_title" style={{ color: darkMode ? "White" : "" }}>Recent Work</h2>
+      <h2 className="section_title" style={{ color: darkMode ? "White" : "" }}>Portefeuille</h2>
 
       <div className="work_filters">
-        <span className="work_item" onClick={() => setItems(Menu)}>Everything</span>
-        <span className="work_item" onClick={() => filterItem("Creative")}>Creative</span>
-        <span className="work_item" onClick={() => filterItem("Art")}>Art</span>
-        <span className="work_item" onClick={() => filterItem("Design")}>Design</span>
+        <span className="work_item" onClick={() => setItems(Menu)}>Tous</span>
+        <span className="work_item" onClick={() => filterItem("Developpement")}>Developpement_Web</span>
         <span className="work_item" onClick={() => filterItem("BTP")}>BTP</span>
       </div>
         <div className="work_container grid">
           {items.map((elem) => {
             const {id, image, title, category} = elem;
             return (
-              <div className="work_card" key={id}>
+              <div className="work_card" key={id}
+              style={{backgroundColor : darkMode? 'white' : ''}}
+              >
 
                 <div className="work_thumbnail">
                   <img src={image} alt="" className="work_img" />
