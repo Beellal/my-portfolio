@@ -49,6 +49,12 @@
     resize: none;
 }
 
+.confirme {
+    justify-content: center;
+    color: var(--first-color);
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width : 1024px) {
     .contact_container{
         grid-template-columns: 300px 360px;

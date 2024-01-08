@@ -39,7 +39,7 @@ const Blog = () => {
 
         <div className="blog_card">
           <div className="blog_thumb">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61554923176806">
               <span className="blog_category">Revue</span>
             </a>
             <a href="#">
