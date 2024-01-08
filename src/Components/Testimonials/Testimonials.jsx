@@ -2,7 +2,7 @@ import React from 'react';
 import './Testimonials.css';
 import Image1 from '../../assets/EFST (1).png';
 import Image2 from '../../assets/pharma.png';
-import Image3 from '../../assets/logo-ryp.png';
+import Image3 from '../../assets/logoryp.png';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

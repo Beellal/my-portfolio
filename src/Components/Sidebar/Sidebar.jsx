@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import Logo from '../../assets/logo-ryp.png';
+import Logo from '../../assets/logoryp.png';
 import Toggl from '../Toggle/Toggl';
 
 
