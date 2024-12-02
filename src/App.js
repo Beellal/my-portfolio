@@ -1,42 +1,42 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Sidebar from './Components/Sidebar/Sidebar';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Resume from './Components/Resume/Resume';
-import Services from './Components/Services/Services';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Blog from './Components/Blog/Blog';
-import Testimonials from './Components/Testimonials/Testimonials';
-// import Pricing from './Components/Pricing/Pricing';
-import Contact from './Components/Contact/Contact';
-import { themeContext } from './Context';
+import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ServicesPage from './pages/ServicesPage/ServicesPage';
+import ResumePage from './pages/ResumePage/ResumePage';
+import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
+//import BlogPage from './pages/BlogPage/BlogPage';
+//import ContactPage from './pages/ContactPage/ContactPage';
 import { useContext } from 'react';
+import { themeContext } from './Context';
 
 function App() {
-    const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
-  return (
-    <>
-    <Sidebar/>
-    <main className='main'
-    style={{
-      backgroundColor : darkMode? 'black' : '',
-      color : darkMode? 'white' : ''
-    }}
-    >
-      <Home/>
-      <About/>
-      <Services/>
-      <Resume/>
-      <Portfolio/>
-      {/* <Pricing/> */}
-      <Testimonials/>
-      <Blog/>
-      <Contact/>
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
-    </main>
-    </>
+  return (
+    <Router>
+      <div className="app-container">
+        <Sidebar />
+        <main 
+          className='main'
+          style={{
+            backgroundColor: darkMode ? 'black' : '',
+            color: darkMode ? 'white' : ''
+          }}
+        >
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+           
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
