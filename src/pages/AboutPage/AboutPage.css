@@ -1,0 +1,125 @@
+.about_container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.about_img {
+  width: 100%;
+  border-radius: 1.5rem;
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about_img:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.about_data {
+  padding: 2.5rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about_data::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+}
+
+.about_description {
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.about_skills {
+  row-gap: 1.25rem;
+}
+
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_number {
+  line-height: 1.2;
+}
+
+.skills_bar,
+.skills_percentage {
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.skills_percentage {
+  display: block;
+  transition: width 1s ease-in-out;
+}
+
+.geci {
+  background-color: rgb(255, 209, 92);
+}
+
+.development {
+  background-color: rgb(255, 76, 96);
+}
+
+.btn {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .about_img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about_data::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    left: 49%;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about_data {
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+    padding: 1.875rem 1.25rem;
+  }
+
+  .about_img {
+    width: 100%;
+  }
+}
