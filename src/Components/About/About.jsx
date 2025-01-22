@@ -49,7 +49,7 @@ const About = () => {
             </a>
           </div>
 
-          <div className="about_skills grid">
+          {/* <div className="about_skills grid">
             <div className="skills_data">
               <div className="skills_titles">
                 <h3
@@ -81,7 +81,7 @@ const About = () => {
                 <span className="skills_percentage development"></span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

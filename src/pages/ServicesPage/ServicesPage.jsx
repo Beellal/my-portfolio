@@ -1,31 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ServicesPage.css';
-import Image1 from '../../assets/S1.png';
+// import Image1 from '../../assets/S1.png';
 import Image2 from '../../assets/S2.png';
-import Image3 from '../../assets/S3.png';
+// import Image3 from '../../assets/S3.png';
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 
 const services = [
-  {
-    id: 1,
-    image: Image1,
-    title: "Technicien BTP",
-    description: "Pour tous les travail de construction et de gestion de projet de construction",
-  },
-  {
-    id: 2,
-    image: Image3,
-    title: "Program & Community (Manager)",
-    description: "Pour des start-ups et des entreprises opérant dans le domaine du BTP.",
-  },
-  {
-    id: 3,
-    image: Image2,
-    title: "Development web",
-    description: "Je travaille principalement du côté Frontend, avec des compétences également dans le Backend.",
-  }
+  // {
+  //   id: 1,
+  //   image: Image1,
+  //   title: "Technicien BTP",
+  //   description: "Pour tous les travail de construction et de gestion de projet de construction",
+  // },
+  // {
+  //   id: 2,
+  //   image: Image3,
+  //   title: "Program & Community (Manager)",
+  //   description: "Pour des start-ups et des entreprises opérant dans le domaine du BTP.",
+  // },
+  // {
+  //   id: 3,
+  //   image: Image2,
+  //   title: "Development web",
+  //   description: "Je travaille principalement du côté Frontend, avec des compétences également dans le Backend.",
+  // }
+
+  
 ];
 
 const ServicesPage = () => {
@@ -63,7 +65,13 @@ const ServicesPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Services
+    <section id="services">
+  <h2 class="italique">Services</h2>
+  <p class="italique">Cette section est actuellement en cours de préparation. Je travaille sur l'intégration de mes services pour mieux vous accompagner dans vos projets.</p>
+  <p class="italique">En attendant, n'hésitez pas à me contacter pour toute demande ou question.</p>
+  <p class="italique">Vous pouvez également me laisser un message sur <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>.</p>
+</section>
+
       </motion.h2>
 
       <motion.div 

@@ -17,11 +17,28 @@ const PortfolioCard = ({ item, darkMode }) => {
         <div className="portfolio_mask"></div>
       </div>
 
-      <span className="portfolio_category">{item.category}</span>
-      <h3 className="portfolio_title">{item.title}</h3>
-      <a href={item.link} className="portfolio_button" target="_blank" rel="noopener noreferrer">
-        <i className="icon-link portfolio_button-icon"></i>
-      </a>
+      <div className="portfolio_content">
+        <span className="portfolio_category">{item.category}</span>
+        <h3 className="portfolio_title">{item.title}</h3>
+        <p className="portfolio_description">{item.description}</p>
+        
+        <div className="portfolio_tech">
+          {item.technologies.map((tech, index) => (
+            <span key={index} className="tech_tag">{tech}</span>
+          ))}
+        </div>
+
+        <div className="portfolio_links">
+          <a href={item.link} className="portfolio_link" target="_blank" rel="noopener noreferrer">
+            <i className="icon-link"></i>
+            <span>Demo</span>
+          </a>
+          <a href={item.githubLink} className="portfolio_link" target="_blank" rel="noopener noreferrer">
+            <i className="icon-social-github"></i>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
     </motion.div>
   );
 };

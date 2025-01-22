@@ -1,8 +1,5 @@
 import React from "react";
 import "./Toggl.css";
-
-import Sun from "@iconscout/react-unicons/icons/uil-sun";
-import Moon from "@iconscout/react-unicons/icons/uil-moon";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 
@@ -13,10 +10,11 @@ const Toggl = () => {
   const handleClick = () => {
     theme.dispatch({ type: "toggl" });
   };
+
   return (
     <div className="toggl" onClick={handleClick}>
-      <Moon />
-      <Sun />
+      <i className="fa-solid fa-moon"></i>
+      <i className="fa-solid fa-sun"></i>
       <div
         className="t_button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}

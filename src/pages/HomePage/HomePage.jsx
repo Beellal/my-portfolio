@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './HomePage.css';
-import Me from '../../assets/Me1.png';
+import Me from '../../assets/Beellal.png';
 import HeaderSocials from '../../Components/Home/HeaderSocials';
-import ScrollDown from '../../Components/Home/ScrollDown';
+// import ScrollDown from '../../Components/Home/ScrollDown';
 import Shapes from '../../Components/Home/Shapes';
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -50,7 +50,7 @@ const HomePage = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Technicien en BTP et développeur web
+          Civil & Software Engineer
         </motion.h1>
         <span className="home_education"></span>
 
@@ -64,7 +64,7 @@ const HomePage = () => {
         >
           Contactez-moi
         </motion.a>
-        <ScrollDown />
+        {/* <ScrollDown /> */}
       </div>
       <Shapes />
     </motion.section>

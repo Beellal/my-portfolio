@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutPage.css';
-import Me2 from '../../assets/About.jpg';
-import AboutBox from '../../Components/About/AboutBox';
+import Me2 from '../../assets/Beellal.png';
+// import AboutBox from '../../Components/About/AboutBox';
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 
@@ -46,8 +46,8 @@ const AboutPage = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         />
-
-        <div className="about_data grid" style={{ backgroundColor: darkMode ? "black" : "" }}>
+          {/* Ajouter Grid */}
+        <div className="about_data" style={{ backgroundColor: darkMode ? "black" : "" }}>
           <div className="about_info">
             <motion.p 
               className="about_description"
@@ -55,10 +55,9 @@ const AboutPage = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Je suis issu d'une formation en génie civil, option BTP, avec
-              l'obtention d'une licence. Ma passion pour le monde technologique
-              informatique m'a conduit à suivre une formation en codage
-              (développement web) dans une école spécialisée.
+              Ingénieur civil et développeur web, je m'engage pleinement pour le développement durable, 
+              en mettant l'accent sur les ODD 9 (Industrie, innovation et infrastructure) et ODD 17 
+              (Partenariats pour la réalisation des objectifs). 
             </motion.p>
             <motion.p 
               className="about_description"
@@ -66,9 +65,12 @@ const AboutPage = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Aujourd'hui, je peux me positionner en tant que développeur web et technicien en
-              génie civil. Mon objectif est d'appliquer les compétences en codage acquises 
-              dans le domaine du BTP, en recherchant des solutions numériques et technologiques.
+              En tant que fondateur d'une organisation communautaire, 
+              je mène des actions concrètes pour promouvoir l'innovation, 
+              les infrastructures durables, et encourager la collaboration 
+              à l'échelle locale et internationale. Mon objectif 
+              est de contribuer à un avenir plus équitable et respectueux de l'environnement, 
+              en combinant mes compétences techniques et mon engagement social.
             </motion.p>
             <motion.a 
               href="#" 
@@ -82,7 +84,7 @@ const AboutPage = () => {
               Telecharger Mon Curriculum
             </motion.a>
           </div>
-
+{/* 
           <motion.div 
             className="about_skills grid"
             initial={{ opacity: 0 }}
@@ -132,11 +134,11 @@ const AboutPage = () => {
                 ></motion.span>
               </motion.div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
-      <AboutBox />
+      {/* <AboutBox /> */}
     </motion.section>
   );
 };

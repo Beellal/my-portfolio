@@ -12,6 +12,21 @@
   box-shadow: var(--shadow);
 }
 
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* Prend la hauteur totale de l'écran */
+  text-align: center; /* Centre le texte */
+  padding: 20px; /* Ajoute de l'espace autour du contenu */
+}
+
+.italique {
+  font-style: italic;
+  margin: 10px 0; /* Ajoute de l'espace entre les paragraphes */
+}
+
 .services_img {
   width: 90px;
   height: 90px;
@@ -29,15 +44,15 @@
 }
 
 .services_card:nth-child(1) {
-  background: linear-gradient(145deg, #ff6b6b, #ffd93d);
+  background: linear-gradient(145deg, #000000, #000000);
 }
 
 .services_card:nth-child(2) {
-  background: linear-gradient(145deg, #4facfe, #00f2fe);
+  background: linear-gradient(145deg, #030303, #12f2c5);
 }
 
 .services_card:nth-child(3) {
-  background: linear-gradient(145deg, #a8eb12, #86e7d4);
+  background: linear-gradient(145deg, #12f2c5, #12f2c5);
 }
 
 .services_card:nth-child(1) .services_title,
