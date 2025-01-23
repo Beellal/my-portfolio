@@ -3,7 +3,7 @@ import './Blog.css';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../Context/LanguageContext';
 import MDP from '../../assets/Methodes de projet.png'
-import PDM from '../../assets/Chargé-de-projet-construction.jpg'
+import PDM from '../../assets/Charg.png'
 
 const blogData = [
     {
