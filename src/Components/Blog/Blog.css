@@ -2,7 +2,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
+.blog{
+    height: 100%;
+}
 .blog_card {
     background: var(--container-color);
     border-radius: var(--border-radius);
