@@ -2,62 +2,64 @@ import React from 'react';
 import './Blog.css';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../Context/LanguageContext';
+import MDP from '../../assets/Methodes de projet.png'
+import PDM from '../../assets/Chargé-de-projet-construction.jpg'
 
 const blogData = [
     {
         id: 1,
-        image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3",
+        image: MDP,
         title: {
             en: "Construction Standards",
-            fr: "Les normes de construction"
+            fr: "Étapes pour sélectionner une méthode de livraison de projet"
         },
         category: {
             en: "Civil Engineering",
             fr: "Génie Civil"
         },
-        date: "2024-01-20",
+        date: "2025-01-08",
         description: {
             en: "Exploring modern construction standards and their implementation.",
-            fr: "Explorer les normes de construction modernes et leur mise en œuvre."
+            fr: "La sélection d'une Project Delivery Method (PDM) repose sur une analyse approfondie des besoins, des objectifs et des contraintes spécifiques au projet. "
         },
-        link: "#"
+        link: "https://www.linkedin.com/pulse/%C3%A9tapes-pour-s%C3%A9lectionner-une-m%C3%A9thode-de-livraison-projet-bilal-ee0re/?trackingId=TxFFZ2xhReKBGAmAY%2B7lEw%3D%3D"
     },
     {
         id: 2,
-        image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3",
+        image: PDM,
         title: {
             en: "Web Development Trends",
-            fr: "Tendances du développement Web"
+            fr: "Les différentes étapes d'un projet de construction typique."
         },
         category: {
-            en: "Development",
-            fr: "Développement"
+            en: "Civil Engineering",
+            fr: "Génie Civil"
         },
-        date: "2024-01-15",
+        date: "2024-02-18",
         description: {
             en: "Latest trends in web development and technology.",
-            fr: "Dernières tendances en développement web et technologie."
+            fr: "Les différentes étapes d'un projet de construction typique, de la conception à la démolition."
         },
-        link: "#"
+        link: "https://www.linkedin.com/pulse/various-steps-involved-typical-construction-project-bilal-4jrte/"
     },
-    {
-        id: 3,
-        image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3",
-        title: {
-            en: "Project Management",
-            fr: "Gestion de Projet"
-        },
-        category: {
-            en: "Management",
-            fr: "Gestion"
-        },
-        date: "2024-01-10",
-        description: {
-            en: "Effective project management strategies in construction.",
-            fr: "Stratégies efficaces de gestion de projet dans la construction."
-        },
-        link: "#"
-    }
+    // {
+    //     id: 3,
+    //     image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3",
+    //     title: {
+    //         en: "Project Management",
+    //         fr: "Gestion de Projet"
+    //     },
+    //     category: {
+    //         en: "Management",
+    //         fr: "Gestion"
+    //     },
+    //     date: "2024-01-10",
+    //     description: {
+    //         en: "Effective project management strategies in construction.",
+    //         fr: "Stratégies efficaces de gestion de projet dans la construction."
+    //     },
+    //     link: "#"
+    // }
 ];
 
 const Blog = () => {

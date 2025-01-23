@@ -3,6 +3,10 @@
   gap: 2rem;
 }
 
+.services{
+  height: 100vh;
+}
+
 .services_card {
   text-align: center;
   padding: 3rem 2rem;
@@ -12,19 +16,34 @@
   box-shadow: var(--shadow);
 }
 
-#services {
+.services-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh; /* Prend la hauteur totale de l'écran */
-  text-align: center; /* Centre le texte */
-  padding: 20px; /* Ajoute de l'espace autour du contenu */
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.italique {
-  font-style: italic;
-  margin: 10px 0; /* Ajoute de l'espace entre les paragraphes */
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-section p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.services-section a {
+  color: #007bff; /* Lien bleu */
+  text-decoration: none;
+}
+
+.services-section a:hover {
+  text-decoration: underline;
 }
 
 .services_img {
@@ -77,5 +96,21 @@
 
   .services_card {
     padding: 2rem 1.5rem;
+  }
+}
+
+
+/* Responsive design pour petits écrans */
+@media (max-width: 768px) {
+  .services-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .services-section p {
+    font-size: 0.9rem;
+  }
+
+  .services-section {
+    padding: 15px;
   }
 }

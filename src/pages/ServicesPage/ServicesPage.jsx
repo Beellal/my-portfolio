@@ -65,12 +65,23 @@ const ServicesPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-    <section id="services">
-  <h2 class="italique">Services</h2>
-  <p class="italique">Cette section est actuellement en cours de préparation. Je travaille sur l'intégration de mes services pour mieux vous accompagner dans vos projets.</p>
-  <p class="italique">En attendant, n'hésitez pas à me contacter pour toute demande ou question.</p>
-  <p class="italique">Vous pouvez également me laisser un message sur <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>.</p>
-</section>
+  <motion.section 
+  id="services" 
+  className="services-section"
+  initial="hidden"
+  animate="visible"
+  exit="exit"
+  variants={{
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, y: -20 }
+  }}
+>
+  <h2 className="italique">Services</h2>
+  <p className="italique">Cette section est actuellement en cours de préparation. Je travaille sur l'intégration de mes services pour mieux vous accompagner dans vos projets.</p>
+  <p className="italique">En attendant, n'hésitez pas à me contacter pour toute demande ou question.</p>
+  <p className="italique">Vous pouvez également me laisser un message sur <a href="www.linkedin.com/in/beellal" target="_blank">LinkedIn</a>.</p>
+</motion.section>
 
       </motion.h2>
 

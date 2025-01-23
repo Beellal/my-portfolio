@@ -3,6 +3,11 @@
     gap: 1.875rem;
 }
 
+.portfolio{
+    height: 100vh;
+}
+
+
 .portfolio_card {
     position: relative;
     border-radius: var(--border-radius);

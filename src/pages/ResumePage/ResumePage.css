@@ -3,6 +3,10 @@
   column-gap: 1.875rem;
 }
 
+.resume{
+  height: 100vh;
+}
+
 .timeline {
   background-color: var(--container-color);
   padding: 1.875rem;
