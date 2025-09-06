@@ -1,0 +1,196 @@
+.blog-page {
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.blog-page .section_title {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.blog-page .section_title::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--first-color), #ff9a9e);
+    border-radius: 2px;
+}
+
+.blog_hero {
+    background: linear-gradient(135deg, var(--first-color), #ff9a9e);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog_hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="1" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.blog_hero_content {
+    position: relative;
+    z-index: 1;
+}
+
+.blog_hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.blog_hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.blog_stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blog_stat_card {
+    background: var(--container-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.blog_stat_card:hover {
+    transform: translateY(-5px);
+}
+
+.blog_stat_number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.blog_stat_label {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+.blog_newsletter {
+    background: var(--container-color);
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-top: 4rem;
+    box-shadow: var(--shadow);
+}
+
+.blog_newsletter h3 {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.blog_newsletter p {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter_form {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.newsletter_input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid var(--container-color);
+    border-radius: 2rem;
+    background: var(--body-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+.newsletter_input:focus {
+    outline: none;
+    border-color: var(--first-color);
+}
+
+.newsletter_btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--first-color), #ff9a9e);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter_btn:hover {
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .blog_hero {
+        padding: 3rem 1rem;
+    }
+
+    .blog_hero h1 {
+        font-size: 2rem;
+    }
+
+    .blog_hero p {
+        font-size: 1rem;
+    }
+
+    .blog_stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .blog_stat_card {
+        padding: 1.5rem;
+    }
+
+    .blog_stat_number {
+        font-size: 2rem;
+    }
+
+    .newsletter_form {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog_stats {
+        grid-template-columns: 1fr;
+    }
+
+    .blog_newsletter {
+        padding: 2rem 1rem;
+    }
+}

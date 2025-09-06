@@ -6,11 +6,11 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import ServicesPage from './pages/ServicesPage/ServicesPage';
 import ResumePage from './pages/ResumePage/ResumePage';
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
-import BlogPage from './Components/Blog/Blog';
+import BlogPage from './pages/BlogPage/BlogPage';
+import GalleryPage from './pages/GalleryPage/GalleryPage';
 import ContactPage from './pages/ContactPage/Contact';
 import { useContext } from 'react';
 import { themeContext } from './Context';
-import Blog from './Components/Blog/Blog';
 
 function App() {
   const theme = useContext(themeContext);
@@ -33,9 +33,9 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/resume" element={<ResumePage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/blog" element={<BlogPage/>} />
-           
           </Routes>
         </main>
       </div>

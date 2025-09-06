@@ -59,6 +59,12 @@ const Sidebar = () => {
               </li>
 
               <li className="nav_item">
+                <Link to="/gallery" className={`nav_link ${isActive("/gallery")}`} onClick={() => showMenu(false)}>
+                  <i className='icon-picture'></i>
+                </Link>
+              </li>
+
+              <li className="nav_item">
                 <Link to="/blog" className={`nav_link ${isActive("/blog")}`} onClick={() => showMenu(false)}>
                   <i className='icon-note'></i>
                 </Link>
