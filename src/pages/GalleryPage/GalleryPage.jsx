@@ -21,10 +21,10 @@ const GalleryPage = () => {
     };
 
     const stats = [
-        { number: "15+", label: "Projets BTP" },
-        { number: "8+", label: "Designs Web" },
-        { number: "3+", label: "Années d'expérience" },
-        { number: "100%", label: "Satisfaction client" }
+        { number: "50+", label: "Designs Canva" },
+        { number: "5+", label: "Comptes Gérés" },
+        { number: "2K+", label: "Vues Totales" },
+        { number: "95%", label: "Engagement Rate" }
     ];
 
     return (
@@ -42,7 +42,7 @@ const GalleryPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    Mes Conceptions & Réalisations
+                    Mes Créations Graphiques & Social Media
                 </motion.h1>
 
                 <motion.div 
@@ -52,12 +52,12 @@ const GalleryPage = () => {
                     transition={{ delay: 0.2 }}
                 >
                     <p style={{ color: darkMode ? "#ccc" : "" }}>
-                        Découvrez mes créations dans le domaine du génie civil et du développement web. 
-                        Chaque projet reflète mon engagement pour l'innovation, la qualité et la durabilité.
+                        Découvrez mes créations graphiques réalisées avec Canva et ma gestion des réseaux sociaux. 
+                        Chaque design reflète mon approche créative et professionnelle de la communication visuelle.
                     </p>
                     <p style={{ color: darkMode ? "#ccc" : "" }}>
-                        De la conception architecturale aux interfaces utilisateur modernes, 
-                        je combine expertise technique et créativité pour donner vie à vos idées.
+                        De l'identité visuelle aux campagnes social media, 
+                        je combine créativité et stratégie pour créer du contenu engageant et impactant.
                     </p>
                 </motion.div>
 

@@ -3,6 +3,34 @@
     gap: 1.875rem;
 }
 
+.portfolio_filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio_filter-item {
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    background: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--small-font-size);
+}
+
+.portfolio_filter-item.active,
+.portfolio_filter-item:hover {
+    background: var(--first-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 76, 96, 0.3);
+}
+
 .portfolio{
     height: 100%;
 }
@@ -83,6 +111,7 @@
 .portfolio_links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .portfolio_link {
@@ -102,9 +131,44 @@
     font-size: 1.1rem;
 }
 
+.portfolio_social_badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: var(--smaller-font-size);
+    font-weight: 600;
+    z-index: 2;
+}
+
+.portfolio_views {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    margin-top: 0.5rem;
+}
+
+.portfolio_views i {
+    color: var(--first-color);
+}
+
 @media screen and (max-width: 1024px) {
     .portfolio_container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portfolio_filters {
+        gap: 0.5rem;
+    }
+    
+    .portfolio_filter-item {
+        padding: 0.5rem 1rem;
+        font-size: var(--smaller-font-size);
     }
 }
 
@@ -112,6 +176,14 @@
     .portfolio_container {
         grid-template-columns: 1fr;
         padding: 0 1rem;
+    }
+    
+    .portfolio_links {
+        flex-direction: column;
+    }
+    
+    .portfolio_link {
+        justify-content: center;
     }
 }
 
@@ -134,5 +206,14 @@
 
     .tech_tag {
         font-size: 0.7rem;
+    }
+    
+    .portfolio_filters {
+        gap: 0.25rem;
+    }
+    
+    .portfolio_filter-item {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
     }
 }

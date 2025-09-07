@@ -8,63 +8,83 @@ import { useContext } from "react";
 const galleryData = [
     {
         id: 1,
-        title: "Plan architectural résidentiel",
-        category: "Architecture",
-        image: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800",
-        description: "Conception d'un plan architectural pour une résidence moderne avec optimisation de l'espace et intégration environnementale.",
-        tools: ["AutoCAD", "SketchUp", "Revit"],
+        title: "Infographie - Méthodes de Projet",
+        category: "Design Graphique",
+        image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+        description: "Création d'infographies éducatives sur les méthodes de livraison de projet pour LinkedIn et formations professionnelles.",
+        tools: ["Canva", "Design Thinking", "Infographie"],
         date: "2024-12-15",
-        type: "Conception BTP"
+        type: "Design Graphique"
     },
     {
         id: 2,
-        title: "Structure en béton armé",
-        category: "Structure",
-        image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800",
-        description: "Calcul et dimensionnement d'une structure en béton armé pour un bâtiment de 5 étages avec analyse sismique.",
-        tools: ["Robot Structural", "Excel", "AutoCAD"],
+        title: "Posts LinkedIn Professionnels",
+        category: "Réseaux Sociaux",
+        image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
+        description: "Création et gestion de contenu professionnel sur LinkedIn avec focus sur l'ingénierie et la construction.",
+        tools: ["Canva", "LinkedIn", "Content Marketing"],
         date: "2024-11-20",
-        type: "Conception BTP"
+        type: "Social Media"
     },
     {
         id: 3,
-        title: "Interface utilisateur moderne",
-        category: "UI/UX",
-        image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-        description: "Design d'interface utilisateur pour une application de gestion de projets avec focus sur l'expérience utilisateur.",
-        tools: ["Figma", "Adobe XD", "Photoshop"],
+        title: "Identité Visuelle Y-Builders",
+        category: "Design Graphique",
+        image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+        description: "Création complète de l'identité visuelle incluant logo, charte graphique et supports de communication.",
+        tools: ["Canva", "Branding", "Logo Design"],
         date: "2024-10-30",
-        type: "Design Web"
+        type: "Branding"
     },
     {
         id: 4,
-        title: "Système de drainage urbain",
-        category: "Infrastructure",
-        image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800",
-        description: "Conception d'un système de drainage pour une zone urbaine avec gestion des eaux pluviales et prévention des inondations.",
-        tools: ["Civil 3D", "HEC-RAS", "ArcGIS"],
+        title: "Campagne Instagram EFST",
+        category: "Réseaux Sociaux",
+        image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpg?auto=compress&cs=tinysrgb&w=800",
+        description: "Gestion complète des réseaux sociaux pour English For The Sahel avec création de contenu visuel engageant.",
+        tools: ["Canva", "Instagram", "Facebook", "Content Strategy"],
         date: "2024-09-15",
-        type: "Conception BTP"
+        type: "Social Media"
     },
     {
         id: 5,
-        title: "Dashboard analytique",
-        category: "UI/UX",
+        title: "Templates Instagram Stories",
+        category: "Design Graphique",
         image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpg?auto=compress&cs=tinysrgb&w=800",
-        description: "Conception d'un tableau de bord analytique pour le suivi de projets de construction en temps réel.",
-        tools: ["React", "D3.js", "Figma"],
+        description: "Série de templates animés pour Instagram Stories adaptés au secteur BTP avec call-to-action intégrés.",
+        tools: ["Canva", "Instagram", "Motion Design"],
         date: "2024-08-22",
-        type: "Design Web"
+        type: "Templates"
     },
     {
         id: 6,
-        title: "Pont en acier",
-        category: "Structure",
+        title: "Présentations Corporate",
+        category: "Design Graphique",
         image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800",
-        description: "Conception structurelle d'un pont en acier avec analyse des charges et optimisation des matériaux.",
-        tools: ["SAP2000", "Tekla", "AutoCAD"],
+        description: "Conception de présentations PowerPoint professionnelles pour pitches clients et formations techniques.",
+        tools: ["Canva", "PowerPoint", "Corporate Design"],
         date: "2024-07-10",
-        type: "Conception BTP"
+        type: "Présentation"
+    },
+    {
+        id: 7,
+        title: "Visuels Facebook Pharma",
+        category: "Réseaux Sociaux",
+        image: "https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg?auto=compress&cs=tinysrgb&w=800",
+        description: "Création de visuels pour la page Facebook de Pharma App avec focus sur l'engagement et la conversion.",
+        tools: ["Canva", "Facebook", "Photoshop"],
+        date: "2024-06-15",
+        type: "Social Media"
+    },
+    {
+        id: 8,
+        title: "Infographies Techniques BTP",
+        category: "Design Graphique",
+        image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800",
+        description: "Série d'infographies techniques expliquant les processus de construction et les bonnes pratiques du BTP.",
+        tools: ["Canva", "Illustrator", "Technical Drawing"],
+        date: "2024-05-20",
+        type: "Infographie"
     }
 ];
 
@@ -75,7 +95,7 @@ const Gallery = () => {
     const [activeFilter, setActiveFilter] = useState('Tous');
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const categories = ['Tous', 'Architecture', 'Structure', 'Infrastructure', 'UI/UX'];
+    const categories = ['Tous', 'Design Graphique', 'Réseaux Sociaux'];
 
     const filterItems = (category) => {
         setActiveFilter(category);
@@ -104,7 +124,7 @@ const Gallery = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                Galerie de Conceptions
+                Mes Réalisations Graphiques
             </motion.h2>
 
             <div className="gallery_filters">
