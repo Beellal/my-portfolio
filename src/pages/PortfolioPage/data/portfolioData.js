@@ -45,7 +45,7 @@ export const portfolioData = [
     technologies: ['React', 'Express', 'MongoDB'],
     link: '#',
     githubLink: 'https://github.com/yourusername/gestion-chantier'
-  }
+  },
   {
     id: 5,
     image: CanvaDesign1,
