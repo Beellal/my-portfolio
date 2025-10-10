@@ -16,7 +16,7 @@ const Home = () => {
         <img src={Me} alt="" className="home_img" />
         <h1 className="home_name"
         style={{ color: darkMode ? "White" : "" }}
-        >Technicien en BTP et développeur web
+        >INTEC
         </h1>
         <span className="home_education"></span>
 

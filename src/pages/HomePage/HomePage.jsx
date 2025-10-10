@@ -50,7 +50,7 @@ const HomePage = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Civil & Software Engineer
+          INTEC
         </motion.h1>
         <span className="home_education"></span>
 
